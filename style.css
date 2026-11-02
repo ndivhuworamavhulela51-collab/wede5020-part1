@@ -273,3 +273,223 @@ footer {
     display: block;
     border-radius: 8px;
 }
+
+/* JavaScript Image Lightbox */
+
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox-image {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Service Search */
+
+.service-search {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#serviceSearch {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#serviceSearch:focus {
+    outline: none;
+    border-color: #f28c00;
+}
+
+#noResults {
+    text-align: center;
+    color: #cc0000;
+    margin: 20px;
+}
+
+/*ANIMATIONS AND INTERACTIVE EFFECTS */
+
+/* Page loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Service card hover animation */
+.service {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover animation */
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Back to top button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #f28c00;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+}
+
+#backToTop:hover {
+    background-color: #003366;
+}
+
+/*CUSTOMER ENQUIRY FORM */
+
+.enquiry-section {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #e6f2ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#enquiryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#enquiryForm label {
+    font-weight: bold;
+    color: #333333;
+}
+
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#enquiryForm input:focus,
+#enquiryForm select:focus,
+#enquiryForm textarea:focus {
+    outline: 2px solid #f28c00;
+    border-color: #003366;
+}
+
+#formMessage {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*FORM VALIDATION MESSAGES*/
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* =================================
+   SOCIAL MEDIA LINKS
+================================= */
+
+.social-media {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+.social-media h2 {
+    color: #003366;
+}
+
+.social-media a {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #f28c00;
+}
+
